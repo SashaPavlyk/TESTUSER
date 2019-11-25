@@ -15,11 +15,11 @@ namespace WFAPP
         string name;
         string age;
         string gender;
-        List<User> userList;
+        //List<User> userList;
         public Form1()
         {
             InitializeComponent();
-            userList = new List<User>();
+            //userList = new List<User>();
             
         }
 
