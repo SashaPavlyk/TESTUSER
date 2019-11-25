@@ -14,6 +14,7 @@ namespace WFAPP
     {
         string name;
         string age;
+        string gender;
         List<User> userList;
         public Form1()
         {
@@ -26,9 +27,11 @@ namespace WFAPP
         {
             name = textBox1.Text;
             age = textBox2.Text;
+            gender = textBox3.Text;
+
             if (name != "" && age != "")
             {
-                User user = new User() { Name = name, Age = Convert.ToInt32(age) };
+                User user = new User() { Name = name, Age = Convert.ToInt32(age), Gender=gender };
                 listBox1.Items.Add(user);
             }
         }
